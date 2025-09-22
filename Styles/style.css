@@ -1,0 +1,312 @@
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.homepage {
+  background-image: url("/Images/index.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(62, 176, 61, 0.6);
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Health Tip */
+.tip {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.newsletter input {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.newsletter button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(64, 214, 66, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Recipe Page */
+.search-section {
+  text-align: center;
+  margin: 20px;
+}
+
+.recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.recipe-card {
+  background: rgba(38, 183, 74, 0.9);
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.recipes {
+  background-image: url("/Images/recipe.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Calculator Page */
+.calc-section {
+  background: rgba(255,255,255,0.9);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+}
+/* Background for Calculator Page */
+.calculator-background {
+  background-image: url("/Images/calculatorbackground.webp"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.calc-section input, .calc-section select, .calc-section button {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.calc-results {
+  background: rgba(255,255,255,0.9);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.bar {
+  background: #ddd;
+  width: 100%;
+  height: 20px;
+  margin: 5px 0 15px;
+  border-radius: 5px;
+}
+
+.bar div {
+  height: 100%;
+  border-radius: 5px;
+}
+
+#carbBar { background: #4CAF50; width: 0%; }
+#proteinBar { background: #2196F3; width: 0%; }
+#fatBar { background: #FF9800; width: 0%; }
+
+/* Backgrounds */
+.workout {
+  background-image: url("/Images/workout.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mindfulness {
+  background-image: url("/Images/meditation.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  background-image: url("/Images/contact.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Workout */
+.workout-section, .workout-results {
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Mindfulness */
+#circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: lightblue;
+  margin: 20px auto;
+  animation: breathe 8s infinite;
+}
+@keyframes breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+.meditation {
+    color: white;
+}
+
+.breathing {
+    color: teal;
+}
+
+
+
+/* Contact */
+.contact-section, .map, .faq {
+  background: rgba(104, 203, 96, 0.9);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+textarea {
+  width: 90%;
+  height: 80px;
+}
+
+.accordion {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #eee;
+  margin: 5px 0;
+}
+.panel {
+  display: none;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+
+
