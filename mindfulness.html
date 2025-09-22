@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite - Mindfulness</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="mindfulness">
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">GreenBite</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"></button>
+    </nav>
+  </header>
+
+  <!-- Breathing Animation -->
+  <section class="breathing">
+    <h2>Guided Breathing</h2>
+    <div id="circle"></div>
+    <p id="breathText">Inhale... Let it all out</p>
+  </section>
+
+  <!-- Meditation Timer -->
+  <section class="meditation">
+    <h2>Meditation Timer</h2>
+    <p>Time left: <span id="meditationTimer">60</span> seconds</p>
+    <button id="startMeditation">Start</button>
+  </section>
+
+  <!-- Ambient Sound -->
+  <section class="sound">
+    <h2>Ambient Sound</h2>
+    <audio id="ambientAudio" loop>
+      <source src="Audio/new01.mp3" type="audio/mp3">
+    </audio>
+    <button id="playAudio">Play Sound</button>
+    <button id="pauseAudio">Pause Sound</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GreenBite | All Rights Reserved</p>
+  </footer>
+
+  <script src="Scripts/mindfulness.js"></script>
+</body>
+</html>
